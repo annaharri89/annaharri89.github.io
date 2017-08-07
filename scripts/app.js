@@ -10,19 +10,19 @@ myApp.config(function($stateProvider) {
         templateUrl: 'templates/stitchCounter.html'
     };
 
-    var portfolioState = {
-        name: 'portfolio',
-        url: '/portfolio',
-        templateUrl: 'templates/portfolio.html'
-    };
-
     var crochetCentralState = {
         name: 'crochetCentral',
         url: '/crochet_central',
         templateUrl: 'templates/crochetCentral.html'
     };
 
+    var aboutState = {
+        name: 'about',
+        url: '/about',
+        templateUrl: 'templates/about.html'
+    };
+
     $stateProvider.state(stitchCounterState);
-    $stateProvider.state(portfolioState);
     $stateProvider.state(crochetCentralState);
+    $stateProvider.state(aboutState);
 });
