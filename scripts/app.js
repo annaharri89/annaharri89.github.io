@@ -6,7 +6,7 @@ var myApp = angular.module('AnnasPortfolio', ['ngResource', 'ui.router', 'ui.boo
 myApp.config(function($stateProvider) {
     var stitchCounterState = {
         name: 'stitchCounter',
-        url: '/',
+        url: '',
         templateUrl: 'templates/stitchCounter.html'
     };
 
