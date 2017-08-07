@@ -7,19 +7,19 @@ myApp.config(function($stateProvider) {
     var stitchCounterState = {
         name: 'stitchCounter',
         url: '/',
-        template: '<h3>hello world!</h3>'
+        templateUrl: 'templates/stitchCounter.html'
     };
 
     var portfolioState = {
         name: 'portfolio',
         url: '/portfolio',
-        template: '<h3>Its the UI-Router hello world app!</h3>'
+        templateUrl: 'templates/portfolio.html'
     };
 
     var crochetCentralState = {
         name: 'crochetCentral',
         url: '/crochet_central',
-        template: '<h3>Its the UI-Router hello world app!</h3>'
+        templateUrl: 'templates/crochetCentral.html'
     };
 
     $stateProvider.state(stitchCounterState);

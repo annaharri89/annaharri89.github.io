@@ -20,21 +20,21 @@
     <script src="scripts/angular-resource.min.js"></script>
     <script src="scripts/app.js"></script>
 </head>
-<body ng-app="AnnasPortfolio" class="background">
+<body ng-app="AnnasPortfolio">
 <app-root>
-    <h1 class="text-center">Anna Harrison's Portfolio</h1>
-    <div class="row">
-        <div class="col-md-3 text-center"></div>
-        <div class="col-md-2 text-center tab" ui-sref="stitchCounter" ui-sref-active="active">
+    <h1 class="text-center header">Anna Harrison's Portfolio</h1>
+    <div class="row header">
+        <div class="col-md-3 col-xs-0 text-center"></div>
+        <div class="col-md-2 col-xs-3 text-center tab" ui-sref="stitchCounter" ui-sref-active="active">
             Stitch Counter
         </div>
-        <div class="col-md-2 text-center tab" ui-sref="portfolio" ui-sref-active="active">
+        <div class="col-md-2 col-xs-3 text-center tab" ui-sref="portfolio" ui-sref-active="active">
             Portfolio
         </div>
-        <div class="col-md-2 text-center tab" ui-sref="crochetCentral" ui-sref-active="active">
+        <div class="col-md-2 col-xs-3 text-center tab" ui-sref="crochetCentral" ui-sref-active="active">
             Crochet Central
         </div>
-        <div class="col-md-3 text-center"></div>
+        <div class="col-md-3 col-xs-2 text-center"></div>
     </div>
     <ui-view></ui-view>
 </app-root>
