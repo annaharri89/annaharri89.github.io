@@ -6,7 +6,7 @@ var myApp = angular.module('router', ['ui.router']);
 myApp.config(function($stateProvider) {
     var stitchCounterState = {
         name: 'stitchCounter',
-        url: '/stitch_counter',
+        url: '/',
         template: '<h3>hello world!</h3>'
     };
 
