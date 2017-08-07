@@ -18,13 +18,14 @@
     <script src="https://annaharri89.github.io/scripts/angular-ui-router.min.js"></script>
     <script src="https://annaharri89.github.io/scripts/ui-bootstrap-tpls-2.5.0.min.js"></script>
     <script src="https://annaharri89.github.io/scripts/router.js"></script>
+    <script src="https://annaharri89.github.io/scripts/TabsCtrl.js"></script>
     <style>.active { background-color: red; font-weight: bold; }</style>
 </head>
 <body ng-app="router">
 <app-root>
     <h1 class="text-center">Anna Harrison's Portfolio</h1>
     <h3 class="text-center">Coming Soon</h3>
-    <div class="row">
+    <!--<div class="row">
         <div class="col-md-4 text-center"></div>
         <div class="col-md-1 text-center">
             <a ui-sref="stitchCounter" ui-sref-active="active">Stitch Counter</a>
@@ -36,6 +37,13 @@
             <a ui-sref="crochetCentral" ui-sref-active="active">Crochet Central</a>
         </div>
         <div class="col-md-4 text-center"></div>
+    </div>-->
+    <div ng-controller="TabsCtrl">
+        <uib-tabset active="active">
+            <uib-tab index="$index + 1" ng-repeat="tab in tabs" heading="{{tab.title}}" disable="tab.disabled">
+                {{tab.content}}
+            </uib-tab>
+        </uib-tabset>
     </div>
     <ui-view></ui-view>
 </app-root>
