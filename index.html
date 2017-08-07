@@ -16,11 +16,27 @@
     <script src="scripts/angular.min.js"></script>
     <script src="scripts/angular-resource.min.js"></script>
     <script src="scripts/angular-ui-router.min.js"></script>
+    <script src="scripts/router.js"></script>
+    <style>.active { background-color: red; font-weight: bold; }</style>
 </head>
-<body>
+<body ng-app="router">
 <app-root>
     <h1 class="text-center">Anna Harrison's Portfolio</h1>
     <h3 class="text-center">Coming Soon</h3>
+    <div class="row">
+        <div class="col-md-4 text-center"></div>
+        <div class="col-md-1 text-center">
+            <a ui-sref="stitchCounter" ui-sref-active="active">Stitch Counter</a>
+        </div>
+        <div class="col-md-1 text-center">
+            <a ui-sref="portfolio" ui-sref-active="active">Portfolio</a>
+        </div>
+        <div class="col-md-1 text-center">
+            <a ui-sref="crochetCentral" ui-sref-active="active">Crochet Central</a>
+        </div>
+        <div class="col-md-4 text-center"></div>
+    </div>
+    <ui-view></ui-view>
 </app-root>
 </body>
 </html>
