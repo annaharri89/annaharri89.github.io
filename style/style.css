@@ -1,0 +1,21 @@
+.active {
+    background-color: white !important;
+    font-weight: bold;
+}
+
+.background {
+    background-color: royalblue;
+}
+
+.tab {
+    margin: 0px;
+    position:relative;
+    background-color: silver;
+    -moz-border-radius-topleft: 30px;
+    -moz-border-radius-topright: 30px;
+    -moz-border-radius-bottomright: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-radius: 30px 0 30px 30px;
+    border-radius: 30px 30px 0 0;
+    padding: 5px;
+}

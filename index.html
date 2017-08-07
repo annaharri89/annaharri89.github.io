@@ -10,40 +10,31 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Theme -->
+    <link rel="stylesheet" href="style/style.css">
 
-    <script src="https://annaharri89.github.io/scripts/angular.min.js"></script>
-    <script src="https://annaharri89.github.io/scripts/angular-resource.min.js"></script>
-    <script src="https://annaharri89.github.io/scripts/angular-ui-router.min.js"></script>
-    <script src="https://annaharri89.github.io/scripts/ui-bootstrap-tpls-2.5.0.min.js"></script>
-    <script src="https://annaharri89.github.io/scripts/router.js"></script>
-    <script src="https://annaharri89.github.io/scripts/controllers/TabsCtrl.js"></script>
-    <style>.active { background-color: red; font-weight: bold; }</style>
+    <!-- Javascript -->
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/ui-bootstrap-tpls-2.5.0.js"></script>
+    <script src="scripts/angular-ui-router.min.js"></script>
+    <script src="scripts/angular-resource.min.js"></script>
+    <script src="scripts/app.js"></script>
 </head>
-<body ng-app="router">
+<body ng-app="AnnasPortfolio" class="background">
 <app-root>
     <h1 class="text-center">Anna Harrison's Portfolio</h1>
-    <h3 class="text-center">Coming Soon</h3>
-    <!--<div class="row">
-        <div class="col-md-4 text-center"></div>
-        <div class="col-md-1 text-center">
-            <a ui-sref="stitchCounter" ui-sref-active="active">Stitch Counter</a>
+    <div class="row">
+        <div class="col-md-3 text-center"></div>
+        <div class="col-md-2 text-center tab" ui-sref="stitchCounter" ui-sref-active="active">
+            Stitch Counter
         </div>
-        <div class="col-md-1 text-center">
-            <a ui-sref="portfolio" ui-sref-active="active">Portfolio</a>
+        <div class="col-md-2 text-center tab" ui-sref="portfolio" ui-sref-active="active">
+            Portfolio
         </div>
-        <div class="col-md-1 text-center">
-            <a ui-sref="crochetCentral" ui-sref-active="active">Crochet Central</a>
+        <div class="col-md-2 text-center tab" ui-sref="crochetCentral" ui-sref-active="active">
+            Crochet Central
         </div>
-        <div class="col-md-4 text-center"></div>
-    </div>-->
-    <div ng-controller="TabsCtrl">
-        <uib-tabset active="active">
-            <uib-tab index="$index + 1" ng-repeat="tab in tabs" heading="{{tab.title}}" disable="tab.disabled">
-                {{tab.content}}
-            </uib-tab>
-        </uib-tabset>
+        <div class="col-md-3 text-center"></div>
     </div>
     <ui-view></ui-view>
 </app-root>
