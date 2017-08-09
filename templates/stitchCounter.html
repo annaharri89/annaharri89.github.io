@@ -2,11 +2,12 @@
     <div class="col-md-3"></div>
     <div class="col-md-6">
         <div class="projectSection">
+            <img src="images/application_icon_stitch_counter.png" height="150" style="float:left; margin:30px">
             <ul>
                 <li>
                     Stitch Counter allows users to keep track of their knitting or crochet projects in two ways:
                 </li>
-                <ol>
+                <ol style="padding-left:200px">
                     <li>
                         Through a single counter which can be used to track stitches or rows and
                     </li>
@@ -22,6 +23,22 @@
                     color themes.
                 </li>
             </ul>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div ng-controller="CarouselCtrl" class="col-md-4">
+        <div style="height: 200px">
+            <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                    <img ng-src="{{slide.image}}" style="margin:auto;">
+                    <div class="carousel-caption">
+                        <h4>Slide {{slide.id}}</h4>
+                        <p>{{slide.text}}</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

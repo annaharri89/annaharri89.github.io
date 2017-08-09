@@ -1,6 +1,3 @@
-/**
- * Created by ETASpare on 8/7/2017.
- */
 var myApp = angular.module('AnnasPortfolio', ['ngResource', 'ui.router', 'ui.bootstrap']);
 
 myApp.config(function($stateProvider) {

@@ -8,10 +8,11 @@ h1 {
     margin-bottom: 0;
     padding-top: 20px;
     padding-bottom: 10px;
+    color: white;
 }
 
 .header {
-    background-color: #10ecff;
+    background-color: #3F51B5;
 }
 
 li {
