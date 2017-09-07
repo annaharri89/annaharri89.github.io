@@ -3,6 +3,11 @@
     font-weight: bold;
 }
 
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
 h1 {
     margin-top: 0;
     margin-bottom: 0;
