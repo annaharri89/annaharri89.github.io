@@ -19,13 +19,17 @@
     <script src="scripts/angular-ui-router.min.js"></script>
     <script src="scripts/angular-resource.min.js"></script>
     <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/CarouselCtrl.js"></script>
+    <script src="scripts/controllers/StitchCounterCarouselCtrl.js"></script>
+    <script src="scripts/controllers/HPFPulseCarouselCtrl.js"></script>
 </head>
 <body ng-app="AnnasPortfolio">
 <app-root>
     <h1 class="text-center header">Anna Harrison's Portfolio</h1>
     <div class="row header">
-        <div class="col-md-3 col-xs-0 text-center"></div>
+        <div class="col-md-1 col-xs-0 text-center"></div>
+        <div class="col-md-2 col-xs-3 text-center tab" ui-sref="hpfPulse" ui-sref-active="active">
+            HPF Pulse
+        </div>
         <div class="col-md-2 col-xs-3 text-center tab" ui-sref="stitchCounter" ui-sref-active="active">
             Stitch Counter
         </div>

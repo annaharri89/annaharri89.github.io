@@ -1,7 +1,7 @@
 /**
  * Created by ETASpare on 8/7/2017.
  */
-angular.module('AnnasPortfolio').controller('CarouselCtrl', function ($scope) {
+angular.module('AnnasPortfolio').controller('StitchCounterCarouselCtrl', function ($scope) {
     $scope.myInterval = 5000;
     $scope.noWrapSlides = false;
     $scope.active = 0;
