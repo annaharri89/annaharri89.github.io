@@ -10,10 +10,10 @@ angular.module('AnnasPortfolio').controller('HPFPulseCarouselCtrl', function ($s
 
     $scope.addSlides = function() {
         var images = [
-            'screen_shot_main.png',
-            'screen_shot_map.png',
-            'screen_shot_all_resources.png',
-            'screen_shot_domestic_violence.png'
+            'screen_shot_main.PNG',
+            'screen_shot_map.PNG',
+            'screen_shot_all_resources.PNG',
+            'screen_shot_domestic_violence.PNG'
         ];
         for (var i = 0; i < images.length; i++) {
             slides.push({
