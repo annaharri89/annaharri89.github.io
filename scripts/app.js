@@ -25,15 +25,8 @@ myApp.config(function($stateProvider) {
         templateUrl: 'templates/about.html'
     };
 
-    var privacyState = {
-        name: 'privacy',
-        url: '/privacy',
-        templateUrl: 'templates/privacy.html'
-    };
-
     $stateProvider.state(hpfPulseState);
     $stateProvider.state(stitchCounterState);
     $stateProvider.state(crochetCentralState);
     $stateProvider.state(aboutState);
-    $stateProvider.state(privacyState);
 });
